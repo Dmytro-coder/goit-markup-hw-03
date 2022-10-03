@@ -25,6 +25,8 @@ body {
 
 .list {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 /* колір основного тексту #757575 */
@@ -98,16 +100,23 @@ rgba(255, 255, 255, 0.6) */
 /* Hero */
 .hero {
   background-color: var(--primery-bg-color);
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1600px;
 }
 .hero-title {
   color: var(--primery-white-color);
-
+  margin-top: 0px;
+  margin-left: auto;
+  margin-bottom: 30px;
+  margin-right: auto;
+  padding-top: 200px;
   width: 696px;
 
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
@@ -115,6 +124,7 @@ rgba(255, 255, 255, 0.6) */
 /* Buttons */
 .hero-button {
   background-color: var(--accent-color);
+  margin-bottom: 200px;
 
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
