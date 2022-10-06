@@ -58,7 +58,9 @@ rgba(255, 255, 255, 0.6) */
 .container {
   margin-left: auto;
   margin-right: auto;
-  width: 1170px;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .nav {
@@ -83,12 +85,15 @@ rgba(255, 255, 255, 0.6) */
   display: flex;
   margin-left: 93px;
 }
-.site-nav li {
+.site-nav .site-nav-item + .site-nav-item {
+  margin-left: 50px;
+}
+/* .site-nav li {
   margin-right: 50px;
 }
 .site-nav-item:last-child {
   margin-right: 0;
-}
+} */
 .site-nav-link {
   display: block;
   padding-top: 32px;
@@ -112,12 +117,15 @@ rgba(255, 255, 255, 0.6) */
   display: flex;
   margin-left: auto;
 }
-.contact-nav li {
+.contact-nav .contact-nav-item + .contact-nav-item {
+  margin-left: 50px;
+}
+/* .contact-nav li {
   margin-right: 50px;
 }
 .contact-nav-item:last-child {
   margin-right: 0;
-}
+} */
 .contact-nav-link {
   display: block;
   padding-top: 32px;
@@ -218,6 +226,13 @@ rgba(255, 255, 255, 0.6) */
   margin-bottom: 94px;
 }
 
+.features {
+  display: flex;
+}
+.features .features-cart + .features-cart {
+  margin-left: 30px;
+}
+
 .features-title {
   color: var(--title-text-color);
   margin-bottom: 10px;
@@ -242,12 +257,15 @@ rgba(255, 255, 255, 0.6) */
 .work {
   display: flex;
 }
-.work li {
+.work .work-photo + .work-photo {
+  margin-left: 30px;
+}
+/* .work li {
   margin-right: 30px;
 }
 .work-photo:last-child {
   margin-right: 0;
-}
+} */
 .section-work {
   margin-bottom: 94px;
 }
@@ -310,7 +328,19 @@ rgba(255, 255, 255, 0.6) */
 .logo-light {
   color: var(--primery-white-color);
 }
-
+.portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 64px;
+}
+.portfolio-cart {
+  width: 370px;
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+.portfolio-cart:nth-child(3n) {
+  margin-right: 0;
+}
 .portfolio-title {
   color: var(--title-text-color);
 
@@ -333,12 +363,15 @@ rgba(255, 255, 255, 0.6) */
   margin-top: 94px;
   margin-bottom: 34px;
 }
-.filter li {
+.filter .filter-item + .filter-item {
+  margin-left: 8px;
+}
+/* .filter li {
   margin-right: 8px;
 }
 .filter-item:last-child {
   margin-right: 0;
-}
+} */
 .filter-button {
   background-color: var(--secondary-bg-color);
   color: var(--title-text-color);
