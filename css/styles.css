@@ -288,14 +288,14 @@ rgba(255, 255, 255, 0.6) */
 .team {
   display: flex;
 }
-.team .team-cart + .team-cart {
+.team .team-description + .team-description {
   margin-left: 30px;
 }
 .team-cart {
   width: 270px;
   height: 368px;
 
-  background: #ffffff;
+  background: var(--primery-white-color);
   /* material shadow v1 */
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -375,8 +375,7 @@ rgba(255, 255, 255, 0.6) */
   /* width: calc((100%-60px) / 3); */
   margin-right: 30px;
   margin-bottom: 30px;
-  background: #ffffff;
-  border: 1px solid #eeeeee;
+  background: var(--primery-white-color);
 }
 .portfolio-cart:nth-child(3n) {
   margin-right: 0;
