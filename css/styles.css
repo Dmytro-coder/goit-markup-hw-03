@@ -52,9 +52,6 @@ rgba(255, 255, 255, 0.6) */
 
 .header {
   border-bottom: 1px solid #ececec;
-  width: 1600px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 /* Site nav */
@@ -148,12 +145,11 @@ rgba(255, 255, 255, 0.6) */
 
 /* Hero */
 .hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
+
   background-color: var(--primery-bg-color);
   text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 94px;
-  width: 1600px;
 }
 .hero-title {
   color: var(--primery-white-color);
@@ -161,7 +157,6 @@ rgba(255, 255, 255, 0.6) */
   margin-left: auto;
   margin-bottom: 30px;
   margin-right: auto;
-  padding-top: 200px;
   width: 696px;
 
   font-weight: 900;
@@ -174,7 +169,6 @@ rgba(255, 255, 255, 0.6) */
 /* Buttons */
 .hero-button {
   background-color: var(--accent-color);
-  margin-bottom: 200px;
 
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -225,8 +219,9 @@ rgba(255, 255, 255, 0.6) */
 }
 
 /* Features */
-.section-features {
-  margin-bottom: 94px;
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .features {
@@ -273,17 +268,12 @@ rgba(255, 255, 255, 0.6) */
   margin-right: 0;
 } */
 .section-work {
-  margin-bottom: 94px;
+  padding-top: 0;
 }
 
 /* Team */
 .section-team {
   background-color: var(--secondary-bg-color);
-  padding-top: 94px;
-  padding-bottom: 94px;
-  width: 1600px;
-  margin-left: auto;
-  margin-right: auto;
 }
 .team {
   display: flex;
@@ -291,9 +281,10 @@ rgba(255, 255, 255, 0.6) */
 .team .team-cart + .team-cart {
   margin-left: 30px;
 }
-.photo {
-  border-radius: 0px;
-  display: flex;
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 .team-description {
   background: var(--primery-white-color);
